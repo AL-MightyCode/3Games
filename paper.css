@@ -10,7 +10,7 @@ body{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
      object-fit: cover; /*Ensures it covers the full screen */
-    z-index: -1; /* Keeps it in the background */
+    z-index: -10; /* Keeps it in the background */
 }
 
 
@@ -58,7 +58,7 @@ body{
     padding: 20px 40px;
     background-color: rgb(255, 0, 187);
     color: white;
- 
+ z-index: -2;
     cursor: pointer;
     border-radius: 20px;
 }
@@ -108,23 +108,23 @@ img:active{
 
 .win{
     position: absolute;
-    top: 200px;
-    left: 470px;
-    width: 450px;
+    top: 270px;
+    left: 450px;
+    width: 480px;
+    z-index: -1;
     
     visibility: hidden;
 }
 
 .loose{
     position: absolute;
-    top: 200px;
-    left: 470px;
-    width: 450px;
-    background-size: cover;
+    height: 250px;
+    top: 270px;
+    left: 450px;
+    width: 480px;
+    z-index: -1;
     
-    padding-top: 50px;
     visibility: hidden;
-    
 }
 
 .names{
